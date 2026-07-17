@@ -1,0 +1,78 @@
+[
+  {
+    "file": "src/main.c",
+    "arguments": [
+      "/home/Damien/cross/arm-gnu-toolchain-15.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc",
+      "-mcpu=cortex-m4",
+      "-mthumb",
+      "-mfloat-abi=hard",
+      "-mfpu=fpv4-sp-d16",
+      "-DSTM32F446xx",
+      "-Isrc",
+      "-I/home/Damien/libs/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Core/Include",
+      "-I/home/Damien/libs/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+      "-Og",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-ffreestanding",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-MMD",
+      "-MP",
+      "-c",
+      "src/main.c",
+      "-o",
+      "build/main.o"
+    ],
+    "directory": "/home/Damien/Dev/stm32/first",
+    "output": "build/main.o"
+  },
+  {
+    "file": "src/system_stm32f4xx.c",
+    "arguments": [
+      "/home/Damien/cross/arm-gnu-toolchain-15.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc",
+      "-mcpu=cortex-m4",
+      "-mthumb",
+      "-mfloat-abi=hard",
+      "-mfpu=fpv4-sp-d16",
+      "-DSTM32F446xx",
+      "-Isrc",
+      "-I/home/Damien/libs/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Core/Include",
+      "-I/home/Damien/libs/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+      "-Og",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-ffreestanding",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-MMD",
+      "-MP",
+      "-c",
+      "src/system_stm32f4xx.c",
+      "-o",
+      "build/system_stm32f4xx.o"
+    ],
+    "directory": "/home/Damien/Dev/stm32/first",
+    "output": "build/system_stm32f4xx.o"
+  },
+  {
+    "file": "src/startup_stm32f446xx.s",
+    "arguments": [
+      "/home/Damien/cross/arm-gnu-toolchain-15.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc",
+      "-mcpu=cortex-m4",
+      "-mthumb",
+      "-mfloat-abi=hard",
+      "-mfpu=fpv4-sp-d16",
+      "-c",
+      "src/startup_stm32f446xx.s",
+      "-o",
+      "build/startup_stm32f446xx.o"
+    ],
+    "directory": "/home/Damien/Dev/stm32/first",
+    "output": "build/startup_stm32f446xx.o"
+  }
+]
